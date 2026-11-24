@@ -3,9 +3,11 @@
   <GravshipRoofSolar_NeedSubstructure>모든 칸이 하부구조 위에 있어야 합니다.</GravshipRoofSolar_NeedSubstructure>
   <GravshipRoofSolar_NeedRoof>모든 칸에 지붕이 있어야 합니다.</GravshipRoofSolar_NeedRoof>
   <GravshipRoofSolar_Overlap>다른 지붕 태양광 패널과 겹칩니다.</GravshipRoofSolar_Overlap>
+  <GravshipRoofSolar_OverTransmitter>{0}와(과) 같은 칸에 놓을 수 없습니다. 패널은 모든 칸으로 전력을 전달하므로 전선이 아닌 전력 전달 건물과 겹칠 수 없습니다.</GravshipRoofSolar_OverTransmitter>
   <GravshipRoofSolar_Inspect>설치 상태: 하부구조 {0}, 지붕 {1}</GravshipRoofSolar_Inspect>
   <GravshipRoofSolar_StatusOk>정상</GravshipRoofSolar_StatusOk>
   <GravshipRoofSolar_StatusMissing>없음</GravshipRoofSolar_StatusMissing>
   <GravshipRoofSolar_CollapsedNoRoof>{0}이(가) 파괴되었습니다: 위의 지붕이 사라졌습니다.</GravshipRoofSolar_CollapsedNoRoof>
   <GravshipRoofSolar_CollapsedNoSubstructure>{0}이(가) 파괴되었습니다: 아래의 하부구조가 사라졌습니다.</GravshipRoofSolar_CollapsedNoSubstructure>
+  <GravshipRoofSolar_ShowToggle>지붕 태양광 패널 표시: 지붕 위에 설치된 태양광 패널을 항상 보여 줍니다.</GravshipRoofSolar_ShowToggle>
 </LanguageData>

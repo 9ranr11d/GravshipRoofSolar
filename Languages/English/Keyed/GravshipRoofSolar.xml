@@ -3,9 +3,11 @@
   <GravshipRoofSolar_NeedSubstructure>Must be placed over substructure on every cell.</GravshipRoofSolar_NeedSubstructure>
   <GravshipRoofSolar_NeedRoof>Must be placed under a roof on every cell.</GravshipRoofSolar_NeedRoof>
   <GravshipRoofSolar_Overlap>Overlaps another roof solar panel.</GravshipRoofSolar_Overlap>
+  <GravshipRoofSolar_OverTransmitter>Cannot share a cell with {0}. The panel transmits power through every cell, so it cannot overlap power-transmitting buildings other than conduits.</GravshipRoofSolar_OverTransmitter>
   <GravshipRoofSolar_Inspect>Mount: substructure {0}, roof {1}</GravshipRoofSolar_Inspect>
   <GravshipRoofSolar_StatusOk>OK</GravshipRoofSolar_StatusOk>
   <GravshipRoofSolar_StatusMissing>missing</GravshipRoofSolar_StatusMissing>
   <GravshipRoofSolar_CollapsedNoRoof>{0} was destroyed: the roof above it is gone.</GravshipRoofSolar_CollapsedNoRoof>
   <GravshipRoofSolar_CollapsedNoSubstructure>{0} was destroyed: the substructure beneath it is gone.</GravshipRoofSolar_CollapsedNoSubstructure>
+  <GravshipRoofSolar_ShowToggle>Show roof solar panels: always draw solar panels installed on roofs.</GravshipRoofSolar_ShowToggle>
 </LanguageData>

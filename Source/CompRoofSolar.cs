@@ -63,6 +63,7 @@ namespace GravshipRoofSolar
         private void UpdateOutput()
         {
             if (trader == null) return;
+            // 패널 자신이 전송 건물이라 항상 자기 망(transNet)이 있다 — 바닐라 발전기처럼 망 유무는 따지지 않는다
             if (!Supported || parent.IsBrokenDown() || !FlickUtility.WantsToBeOn(parent) || !trader.PowerOn)
                 trader.PowerOutput = 0f;
             else

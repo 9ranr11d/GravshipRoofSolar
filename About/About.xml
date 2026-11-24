@@ -23,17 +23,17 @@
   </loadAfter>
   <description>Roof-mounted solar panels for gravships and substructure bases.
 
-- A 4x4 solar panel that sits on top of the roof, so it can be built over walls, furniture, workbenches and wiring without using floor space
+- A 4x4 solar panel that sits on top of the roof, so it can be built over walls, furniture and workbenches without using floor space
 - Same cost, power (1700 W), hit points and research as the vanilla solar generator; output follows sunlight and is not reduced by the roof it sits on
 - Needs substructure and a roof under all 16 cells. If any roof cell is lost (drop pod, roof removed, collapse) or the substructure disappears, the panel is destroyed and leaves the usual wreckage
 - Safe through gravship takeoff and landing
-- Drawn only when selected or while the power grid overlay is showing, so it never hides what is underneath
+- Hidden by default so it never covers what is underneath. Shown when selected, with the power grid overlay, while placing or deconstructing, or always via the new "Show roof solar panels" toggle in the bottom-right play settings
 - Plants growing below (e.g. hydroponics) are not cleared when the panel is built
-- Removing the mod only removes the panels
+- Removing the mod removes the panels. Because panels replace the conduits under them, re-lay conduits there afterwards or the grid will have gaps
 
 Limits:
 - A panel straddling the edge of a gravship engine's range is not carried by the ship
 - If the roof under a blueprint is removed before it is finished, the panel is destroyed on completion
-- Each panel needs a power conduit or other power transmitter within 6 cells of its center
+- Like the vanilla solar generator, every cell of the panel transmits power: it joins the grid by touching a conduit, another panel or a generator. Conduits under a panel are removed when it is built (the panel takes their place), and it cannot be placed over batteries, generators or switches
 - It is not shielded from fire or explosions in the rooms below</description>
 </ModMetaData>
