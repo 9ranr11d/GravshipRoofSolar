@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GravshipRoofSolar_NeedSubstructure>Must be placed over substructure on every cell.</GravshipRoofSolar_NeedSubstructure>
+  <GravshipRoofSolar_NeedRoof>Must be placed under a roof on every cell.</GravshipRoofSolar_NeedRoof>
+  <GravshipRoofSolar_Overlap>Overlaps another roof solar panel.</GravshipRoofSolar_Overlap>
+  <GravshipRoofSolar_Inspect>Mount: substructure {0}, roof {1}</GravshipRoofSolar_Inspect>
+  <GravshipRoofSolar_StatusOk>OK</GravshipRoofSolar_StatusOk>
+  <GravshipRoofSolar_StatusMissing>missing</GravshipRoofSolar_StatusMissing>
+  <GravshipRoofSolar_CollapsedNoRoof>{0} was destroyed: the roof above it is gone.</GravshipRoofSolar_CollapsedNoRoof>
+  <GravshipRoofSolar_CollapsedNoSubstructure>{0} was destroyed: the substructure beneath it is gone.</GravshipRoofSolar_CollapsedNoSubstructure>
+</LanguageData>

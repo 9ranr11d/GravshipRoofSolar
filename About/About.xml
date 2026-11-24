@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Gravship Roof Solar</name>
+  <author>9ranr11d</author>
+  <packageId>9ranr11d.GravshipRoofSolar</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>Ludeon.RimWorld.Odyssey</packageId>
+      <displayName>Odyssey</displayName>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>Ludeon.RimWorld.Odyssey</li>
+  </loadAfter>
+  <description>Roof-mounted solar panels for gravships and substructure bases.
+
+- A 4x4 solar panel that sits on top of the roof, so it can be built over walls, furniture, workbenches and wiring without using floor space
+- Same cost, power (1700 W), hit points and research as the vanilla solar generator; output follows sunlight and is not reduced by the roof it sits on
+- Needs substructure and a roof under all 16 cells. If any roof cell is lost (drop pod, roof removed, collapse) or the substructure disappears, the panel is destroyed and leaves the usual wreckage
+- Safe through gravship takeoff and landing
+- Drawn only when selected or while the power grid overlay is showing, so it never hides what is underneath
+- Plants growing below (e.g. hydroponics) are not cleared when the panel is built
+- Removing the mod only removes the panels
+
+Limits:
+- A panel straddling the edge of a gravship engine's range is not carried by the ship
+- If the roof under a blueprint is removed before it is finished, the panel is destroyed on completion
+- Each panel needs a power conduit or other power transmitter within 6 cells of its center
+- It is not shielded from fire or explosions in the rooms below</description>
+</ModMetaData>
