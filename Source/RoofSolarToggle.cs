@@ -1,3 +1,4 @@
+using System.Linq;
 using HarmonyLib;
 using RimWorld;
 using UnityEngine;
@@ -47,8 +48,27 @@ namespace GravshipRoofSolar
             if (worldView || row == null) return;
             var comp = Current.Game?.GetComponent<GameComponent_RoofSolarView>();
             if (comp == null || RoofSolarToggleIcon.Icon == null) return;
+            bool before = comp.showRoofSolar;
             row.ToggleableIcon(ref comp.showRoofSolar, RoofSolarToggleIcon.Icon,
                 "GravshipRoofSolar_ShowToggle".Translate(), SoundDefOf.Mouseover_ButtonToggle);
+            // 끄는 순간 선택돼 있던 패널은 풀어 준다(꺼진 동안은 선택 불가이므로)
+            if (before && !comp.showRoofSolar && Find.Selector != null)
+            {
+                foreach (object o in Find.Selector.SelectedObjects.ToList())
+                    if (o is Building_RoofSolarPanel) Find.Selector.Deselect(o);
+            }
+        }
+    }
+
+    // 토글이 꺼져 있으면 패널을 지도 클릭·드래그 박스·더블클릭으로 선택하지 못하게 한다(2026-11-25 사용자: 아래 가구를 고를 때 패널이 걸림).
+    // 클릭(TargetingParameters.mustBeSelectable)·드래그 박스(MultiSelectableThingsInScreenRectDistinct)·같은 종류 전체 선택이 모두 이 함수를 거친다.
+    // 해체 지정 도구는 선택과 별개라 그대로 쓸 수 있다.
+    [HarmonyPatch(typeof(ThingSelectionUtility), nameof(ThingSelectionUtility.SelectableByMapClick))]
+    public static class Patch_SelectableByMapClick
+    {
+        public static void Postfix(Thing t, ref bool __result)
+        {
+            if (__result && t is Building_RoofSolarPanel && !GameComponent_RoofSolarView.Show) __result = false;
         }
     }
 }
