@@ -27,7 +27,8 @@
 - Same cost, power (1700 W), hit points and research as the vanilla solar generator; output follows sunlight and is not reduced by the roof it sits on
 - Needs substructure and a roof under all 16 cells. If any roof cell is lost (drop pod, roof removed, collapse) or the substructure disappears, the panel is destroyed and leaves the usual wreckage
 - Safe through gravship takeoff and landing
-- Hidden by default so it never covers what is underneath. Shown when selected, with the power grid overlay, while placing or deconstructing, or always via the new "Show roof solar panels" toggle in the bottom-right play settings
+- Hidden by default so it never covers what is underneath. Shown with the power grid overlay, while placing or deconstructing, or always via the new "Show roof solar panels" toggle in the bottom-right play settings
+- While that toggle is off, panels can't be selected by clicking or dragging, so they never get in the way of things below (deconstruction still works)
 - Plants growing below (e.g. hydroponics) are not cleared when the panel is built
 - Removing the mod removes the panels. Because panels replace the conduits under them, re-lay conduits there afterwards or the grid will have gaps
 
